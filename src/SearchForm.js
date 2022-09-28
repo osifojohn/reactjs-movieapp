@@ -78,7 +78,7 @@ const SearchForm = () => {
               src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
               alt=""
               onClick={handleSubmit}
-              style={{ cursor: "pointer" }}
+              style={{ cursor: "pointer" color:'transparent'}}
             ></img>
           }
         </div>
