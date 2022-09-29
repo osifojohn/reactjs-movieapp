@@ -83,22 +83,24 @@ const SearchForm = () => {
         </div>
       )}
 
-      {!query &&
-        movieCategories.map((movies, index) => {
-          return (
-            <button
-              key={index}
-              type="button"
-              name="movies"
-              onClick={() => setMovieUrl(MovieData[index])}
-              autoFocus
-              disabled={isLoading}
-              className="menu-btn"
-            >
-              {movies}
-            </button>
-          );
-        })}
+      <div className="menu-box">
+        {!query &&
+          movieCategories.map((movies, index) => {
+            return (
+              <button
+                key={index}
+                type="button"
+                name="movies"
+                onClick={() => setMovieUrl(MovieData[index])}
+                autoFocus
+                disabled={isLoading}
+                className="menu-btn"
+              >
+                {movies}
+              </button>
+            );
+          })}
+      </div>
       {searchResultInfo.show && (
         <div className="search-msg">
           {searchResultInfo.msg}
