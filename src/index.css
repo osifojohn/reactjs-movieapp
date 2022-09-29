@@ -187,7 +187,6 @@ Search
 .menu-box {
   display: grid;
   grid-template-columns: 9rem 9rem 9rem;
-  margin-top: 0.8rem;
   max-width: 35rem;
 }
 
