@@ -64,12 +64,12 @@ const SearchForm = () => {
         <div className="search-container">
           {
             <input
+              className="input-search-bar"
               type="text"
               id="search-bar"
               value={newQuery}
               onChange={(e) => setNewQuery(e.target.value)}
               placeholder="search movie"
-              style={{ display: "block", marginBottom: 0 }}
             ></input>
           }
           {
@@ -78,7 +78,6 @@ const SearchForm = () => {
               src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
               alt=""
               onClick={handleSubmit}
-              style={{ cursor: "pointer", color: "transparent" }}
             ></img>
           }
         </div>
@@ -94,6 +93,7 @@ const SearchForm = () => {
               onClick={() => setMovieUrl(MovieData[index])}
               autoFocus
               disabled={isLoading}
+              className="menu-btn"
             >
               {movies}
             </button>

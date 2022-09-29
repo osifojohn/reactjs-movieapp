@@ -154,10 +154,10 @@ Search
   letter-spacing: var(--spacing);
 }
 .search-container {
-  width: 490px;
+  max-width: 29rem;
   display: block;
 }
-input#search-bar {
+.input-search-bar {
   margin: 0 auto;
   width: 100%;
   height: 45px;
@@ -165,8 +165,10 @@ input#search-bar {
   font-size: 1.04rem;
   border: 1px solid #d0cfce;
   outline: none;
+  display: block;
+  margin-bottom: 0;
 }
-input#search-bar:focus {
+.input-search-bar:focus {
   border: 1px solid #008abf;
   transition: 0.35s ease;
   color: #008abf;
@@ -179,10 +181,12 @@ input#search-bar:focus {
   height: 62px;
   top: -57px;
   right: -15px;
+  cursor: pointer;
+  opacity: 0.6;
 }
-button {
+.menu-btn {
   margin-top: 1.1rem;
-  color: #ffffff;
+  color: #fff;
   background-color: #2dc8ae;
   font-size: 1.1rem;
   border: 1px solid #2d63c8;
@@ -191,11 +195,11 @@ button {
   border-radius: 5px;
   margin-left: 0.8rem;
 }
-button:hover {
+.menu-btn:hover {
   color: #fff;
   background-color: var(--clr-primary-4);
 }
-button:disabled {
+.menu-btn:disabled {
   cursor: none;
 }
 
@@ -215,7 +219,8 @@ Loading
   width: 5rem;
   height: 5rem;
   margin: 0 auto;
-  margin-top: 20rem;
+  margin-top: 15rem;
+
   border-radius: 50%;
   border: 3px solid #ccc;
   border-top-color: var(--clr-primary-3);
@@ -225,7 +230,6 @@ Loading
   width: 3.7rem;
   height: 3.7rem;
   margin: 0 auto;
-
   border-radius: 50%;
   border: 3px solid #ccc;
   border-top-color: var(--clr-primary-3);
@@ -325,7 +329,8 @@ Single Movie
 }
 .btn {
   text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
   background: var(--clr-primary-3);
   color: var(--clr-white);
   border-radius: var(--radius);
